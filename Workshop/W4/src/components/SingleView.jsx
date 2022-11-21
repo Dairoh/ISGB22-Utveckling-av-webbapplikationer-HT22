@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import "./SingleView.css";
 
-import { Link, useParams } from "react-router-dom";
+import {Link, useParams } from "react-router-dom";
 
-function withParams(Component) {
-	//return props => <Component {...props} params={useParams()} />
-	return props => <SingleView {...props} params={useParams()} />
+
+function withParams(Component){
+	return props => <Component {...props} params={useParams()} />
 }
 
-class SingleView extends Component {
+class SingleView extends Component{
 
-	constructor(props) {
+	constructor(props){
 		super(props);
 
 		console.log(this.props);
@@ -24,7 +24,4 @@ class SingleView extends Component {
 			</div>
 		);
 	}
-
 }
-
-export default withParams(SingleView);

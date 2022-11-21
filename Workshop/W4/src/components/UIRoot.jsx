@@ -2,12 +2,12 @@ import { Component } from "react";
 import Header from "./Header";
 import ReactionContainer from './ReactionContainer';
 
-import { Route, Routes } from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import SingleView from "./SingleView";
 
 class UIRoot extends Component {
 
-    getReactionContainer() {
+    getReactionContainer(){
         return <ReactionContainer />
     }
 
@@ -18,7 +18,7 @@ class UIRoot extends Component {
             <Header />
             <Routes>
                 <Route path="/" element={this.getReactionContainer()} />
-                <Route path="/view/:id" element={<SingleView />} />
+                <Route path="/view/:id" element={<SingleView abc="123"/>} />
             </Routes>
         </>
         
