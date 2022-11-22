@@ -3,17 +3,17 @@ import { Link } from "react-router-dom";
 import "./Home.css";
 
 
-class Navbar extends Component {
+class Error extends Component {
 
     render() {
         return (
         
-        <div className="home">
+            <div className="home">
            
-       </div>
+            </div>
         
         );
     }
 }
 
-export default Navbar;
+export default Error;
